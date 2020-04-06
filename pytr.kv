@@ -1,6 +1,3 @@
-
-
-
 <Enter>:
     lang_1:lang_1
     lang_2:lang_2
@@ -13,8 +10,7 @@
     
     
     
-    GridLayout:
-              
+    GridLayout:    
         FloatLayout:
             size:550,260
             GridLayout:
@@ -41,7 +37,6 @@
         MDRaisedButton:
             id:fstL
             text:"FstLanguage"
-           
             pos:20,265
             size:70,30  
             on_release: 
@@ -50,14 +45,12 @@
         MDRaisedButton:
             id:scndL
             text:"ScndLanguage"
-           
             pos:140,265
             size:70,30  
             on_release: 
                 root.btn2()
                 
 <P>:
-    
     GridLayout:
         size:300,300
         pos:161.5,10
@@ -66,8 +59,7 @@
         Button:
             text:"English"
             on_release:root.En()
-             
-            
+      
         Button:
             text:"Russian"
             on_release:root.Ru()
@@ -91,7 +83,6 @@
         raws:2
         Button:
             text:"English"
- 
             on_release:root.En2()
         Button:
             text:"Russian"
