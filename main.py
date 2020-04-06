@@ -36,18 +36,15 @@ class P(FloatLayout):
         global language_1
         language_1 = 'fr'
         close_popup()
-
-
+        
     def Uk(self):
+        
         global language_1
         language_1 = 'uk'
-        
-        
         close_popup() 
 
 
 class P2(FloatLayout):
-
     def En2(self):
         global language_2
         language_2 = 'en' 
@@ -56,20 +53,16 @@ class P2(FloatLayout):
     def Ru2(self):
         global language_2
         language_2 = 'ru'
-        
-        
         close_popup2() 
         
     def Fr2(self):
         global language_2
         language_2 = 'fr'
-        
         close_popup2() 
+        
     def Uk2(self):
         global language_2
         language_2 = 'uk'
-        
-        
         close_popup2() 
 
 translator = Translator()
@@ -85,7 +78,6 @@ class Enter(Widget):
     def btn2(self):
         show_popup2()
 
-    
 def show_popup():
     show = P()
     global popup_window
@@ -99,7 +91,6 @@ def show_popup2():
     popup_window2.open()
 
 def close_popup():
-    
     popup_window.dismiss()
 def close_popup2():
     popup_window2.dismiss()
