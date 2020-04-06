@@ -1,0 +1,107 @@
+
+
+
+<Enter>:
+    lang_1:lang_1
+    lang_2:lang_2
+    canvas.before:
+        Color:
+            rgba: 0.709, 0.709, 0.709, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    
+    
+    GridLayout:
+              
+        FloatLayout:
+            size:550,260
+            GridLayout:
+                spacing:2
+                size: 550,250
+                cols:1
+                TextInput:
+                    id:lang_1
+                    text:''
+                    background_color:0.950, 0.950, 0.950, 1    
+                TextInput:
+                    id:lang_2
+                    text:''
+                    background_color:0.950, 0.950, 0.950, 1 
+        Button:
+            on_press:
+                self.background_color = 0,0,0,0.5
+                root.translater()
+            on_release: self.background_color = 0,0,255,0.6
+            background_color: 0,0,255,0.6 
+            pos:550,0
+            height:260
+            width:50
+        MDRaisedButton:
+            id:fstL
+            text:"FstLanguage"
+           
+            pos:20,265
+            size:70,30  
+            on_release: 
+                root.btn()
+                
+        MDRaisedButton:
+            id:scndL
+            text:"ScndLanguage"
+           
+            pos:140,265
+            size:70,30  
+            on_release: 
+                root.btn2()
+                
+<P>:
+    
+    GridLayout:
+        size:300,300
+        pos:161.5,10
+        cols:2
+        raws:2
+        Button:
+            text:"English"
+            on_release:root.En()
+             
+            
+        Button:
+            text:"Russian"
+            on_release:root.Ru()
+            
+        Button:
+            text:"French"
+            on_release:root.Fr()
+            
+        Button:
+            text:"Ukrainian"
+            on_release:root.Uk()
+            
+                
+                
+            
+<P2>:
+    GridLayout:
+        size:300,300
+        pos:161.5,10
+        cols:2
+        raws:2
+        Button:
+            text:"English"
+ 
+            on_release:root.En2()
+        Button:
+            text:"Russian"
+            on_release:root.Ru2()
+            
+        Button:
+            text:"French"
+            on_release:root.Fr2()
+            
+        Button:
+            text:"Ukrainian"
+            on_release:root.Uk2()
+                     
